@@ -1,0 +1,4 @@
+#!/bin/bash
+find . -type f -name "*.txt" -exec mv {} "./Modified" \;
+find "./Modified" -type f -name "*.txt" -exec mv {} {}.bak \;
+echo "Done !!"
